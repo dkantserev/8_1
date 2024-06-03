@@ -5,8 +5,11 @@ def addPet(name,type,agr,o):
 	
 	pets[name]=Pet
 def yearOrYears(age):
+	
 	r=''
-	if age%10 ==1:
+	if age>5 and age< 20:
+		r='лет'
+	elif age%10 ==1:
 		r='год'
 	elif age%10<5:
 		r='года'
